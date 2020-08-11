@@ -53,8 +53,11 @@ namespace form4
 
         private void btnVerwijderen_Click(object sender, EventArgs e)
         {
-            notitieLijst.RemoveAt(lbNotities.SelectedIndex);
-            VulLijst();
+            if (lbNotities.SelectedIndex >= 0)
+            {
+                notitieLijst.RemoveAt(lbNotities.SelectedIndex);
+                VulLijst();
+            }   
         }
         public void VulLijst()
         {
@@ -69,7 +72,7 @@ namespace form4
 
         private void btnSchrijfBij_Click(object sender, EventArgs e)
         {
-            if (tbText.Text != "")
+            if (tbText.Text != ""&&lbNotities.SelectedIndex>=0)
             {
                 notitieLijst[lbNotities.SelectedIndex].Inhoud += " " + tbText.Text;
                 int i = lbNotities.SelectedIndex;
