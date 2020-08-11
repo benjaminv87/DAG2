@@ -16,5 +16,10 @@ namespace Form3
         {
             InitializeComponent();
         }
+
+        private void btnToonDatum_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(dtpDatum.Value.ToString("dd/MM/yyyy"));
+        }
     }
 }
