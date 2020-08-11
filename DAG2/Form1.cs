@@ -28,9 +28,10 @@ namespace DAG2
 
         private void btnListBoxRechts_Click(object sender, EventArgs e)
         {
+
             if(lbLinks.SelectedIndex >= 0)
             {
-                lbRechts.Items.Add(lbLinks.SelectedItem);
+                lbRechts.Items.Add(lbLinks.SelectedItems);
                 lbLinks.Items.RemoveAt(lbLinks.SelectedIndex) ;
             }
         }
@@ -39,7 +40,7 @@ namespace DAG2
         {
             if (lbRechts.SelectedIndex >= 0)
             {
-                lbLinks.Items.Add(lbRechts.SelectedItem);
+                lbLinks.Items.Add(lbRechts.SelectedItems);
                 lbRechts.Items.RemoveAt(lbRechts.SelectedIndex);
             }
         }

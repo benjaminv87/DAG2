@@ -67,6 +67,7 @@
             this.lbLinks.FormattingEnabled = true;
             this.lbLinks.Location = new System.Drawing.Point(12, 60);
             this.lbLinks.Name = "lbLinks";
+            this.lbLinks.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbLinks.Size = new System.Drawing.Size(100, 134);
             this.lbLinks.TabIndex = 3;
             // 
@@ -75,6 +76,7 @@
             this.lbRechts.FormattingEnabled = true;
             this.lbRechts.Location = new System.Drawing.Point(199, 60);
             this.lbRechts.Name = "lbRechts";
+            this.lbRechts.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbRechts.Size = new System.Drawing.Size(100, 134);
             this.lbRechts.TabIndex = 4;
             // 
